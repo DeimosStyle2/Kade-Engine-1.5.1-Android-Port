@@ -139,6 +139,23 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
+			case 'agoti':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/AGOTI', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'Agoti_Idle', 24);
+				animation.addByPrefix('singUP', 'Agoti_Up', 24);
+				animation.addByPrefix('singRIGHT', 'Agoti_Right', 24);
+				animation.addByPrefix('singDOWN', 'Agoti_Down', 24);
+				animation.addByPrefix('singLEFT', 'Agoti_Left', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -6, 50);
+				addOffset("singRIGHT", 0, 27);
+				addOffset("singLEFT", -10, 10);
+				addOffset("singDOWN", 0, -30);
+
+				playAnim('idle');
 			case 'spooky':
 				tex = Paths.getSparrowAtlas('characters/spooky_kids_assets');
 				frames = tex;
