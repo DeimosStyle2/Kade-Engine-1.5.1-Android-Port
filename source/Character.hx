@@ -139,7 +139,7 @@ class Character extends FlxSprite
 				addOffset("singDOWN", 0, -30);
 
 				playAnim('idle');
-			case 'agoti':
+			case 'agoti-player':
 				// DAD ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('characters/AGOTI', 'shared');
 				frames = tex;
@@ -154,6 +154,23 @@ class Character extends FlxSprite
 				addOffset("singRIGHT", 0, 27);
 				addOffset("singLEFT", -10, 10);
 				addOffset("singDOWN", 0, -30);
+
+				playAnim('idle');
+                        case 'tabi-player':
+				// DAD ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('characters/AGOTI', 'shared');
+				frames = tex;
+				animation.addByPrefix('idle', 'BF idle dance', 24);
+				animation.addByPrefix('singUP', 'BF NOTE UP', 24);
+				animation.addByPrefix('singRIGHT', 'BF NOTE RIGHT', 24);
+				animation.addByPrefix('singDOWN', 'BF NOTE DOWN', 24);
+				animation.addByPrefix('singLEFT', 'BF NOTE LEFT', 24);
+
+				addOffset('idle');
+				addOffset("singUP", -48, -7);
+				addOffset("singRIGHT", 7, 19);
+				addOffset("singLEFT", -20, -51);
+				addOffset("singDOWN", -46, 27);
 
 				playAnim('idle');
 			case 'spooky':
